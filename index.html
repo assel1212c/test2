@@ -2,18 +2,18 @@
 <html lang="kk">
 <head>
   <meta charset="UTF-8">
-  <title>Интерфейс бойынша тест</title>
+  <title>Онлайн тест</title>
   <style>
     body {
       font-family: sans-serif;
-      max-width: 800px;
+      max-width: 700px;
       margin: 50px auto;
-      background: #f0f2f5;
+      background: #f8f9fa;
       padding: 30px;
       border-radius: 15px;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
-    h2 { color: #333; text-align: center; }
+    h2 { color: #333; }
     .question { margin-bottom: 20px; }
     button {
       background: #007bff;
@@ -23,102 +23,101 @@
       border-radius: 8px;
       cursor: pointer;
       font-size: 16px;
-      display: block;
-      margin: 20px auto;
     }
     .result {
       font-size: 18px;
       font-weight: bold;
       color: green;
-      text-align: center;
       margin-top: 20px;
     }
   </style>
 </head>
 <body>
 
-  <h2>Пайдаланушы интерфейсі бойынша тест</h2>
+  <h2>Антивирустік қауіпсіздік бойынша тест</h2>
 
   <form id="quizForm">
+    
 
     <div class="question">
-      <p>1. Пайдаланушы интерфейсі дегеніміз не?</p>
-      <input type="radio" name="q1" value="A"> A. Компьютердің ішкі құрылғысы<br>
-      <input type="radio" name="q1" value="B"> B. Адам мен компьютер арасындағы байланыс түрі<br>
-      <input type="radio" name="q1" value="C"> C. Принтердің жұмыс істеу әдісі<br>
-      <input type="radio" name="q1" value="D"> D. Компьютерлік вирус
+      <p>1. Компьютерлік вирустың негізгі мақсаты қандай?</p>
+      <input type="radio" name="q1" value="Жүйені жеделдету"> Жүйені жеделдету<br>
+      <input type="radio" name="q1" value="Бағдарламаларды жаңарту"> Бағдарламаларды жаңарту<br>
+      <input type="radio" name="q1" value="Жүйеге зиян келтіріп, таралу"> Жүйеге зиян келтіріп, таралу<br>
+      <input type="radio" name="q1" value="Компьютерді тазарту"> Компьютерді тазарту
+    </div>
+<div class="question">
+      <p>2. Вирустың компьютерде пайда болғанын қандай белгілерден байқауға болады?</p>
+      <input type="radio" name="q2" value="Компьютердің жылдам жұмыс істеуі"> Компьютердің жылдам жұмыс істеуі<br>
+      <input type="radio" name="q2" value="Жүйенің жиі істен шығуы және баяулауы"> Жүйенің жиі істен шығуы және баяулауы<br>
+      <input type="radio" name="q2" value="Экранның түсінің өзгеруі"> Экранның түсінің өзгеруі<br>
+      <input type="radio" name="q2" value="Принтердің жұмыс істеуі"> Принтердің жұмыс істеуі
     </div>
 
     <div class="question">
-      <p>2. Графикалық интерфейс дегеніміз не?</p>
-      <input type="radio" name="q2" value="A"> A. Тек мәтін арқылы жұмыс істейтін интерфейс<br>
-      <input type="radio" name="q2" value="B"> B. Суреттер, батырмалар, мәзірлер арқылы басқарылатын интерфейс<br>
-      <input type="radio" name="q2" value="C"> C. Бағдарлама кодының интерфейсі<br>
-      <input type="radio" name="q2" value="D"> D. Компьютердің ішкі жады
+      <p>3. Файлдар жүйесінің зақымдану салдары қандай болуы мүмкін?</p>
+      <input type="radio" name="q3" value="Файлдардың көлемі артады"> Файлдардың көлемі артады<br>
+      <input type="radio" name="q3" value="Файлдарда жаңа функциялар пайда болады"> Файлдарда жаңа функциялар пайда болады<br>
+      <input type="radio" name="q3" value="Құрылу уақыты өзгереді немесе мүлдем жоғалып кетеді"> Құрылу уақыты өзгереді немесе мүлдем жоғалып кетеді<br>
+      <input type="radio" name="q3" value="Файлдар автоматты түрде көбейеді"> Файлдар автоматты түрде көбейеді
     </div>
 
     <div class="question">
-      <p>3. Пайдаланушы интерфейсінің түрлерін атаңыз.</p>
-      <input type="radio" name="q3" value="A"> A. Ақпараттық және логикалық<br>
-      <input type="radio" name="q3" value="B"> B. Техникалық және механикалық<br>
-      <input type="radio" name="q3" value="C"> C. Графикалық және мәтіндік<br>
-      <input type="radio" name="q3" value="D"> D. Желілік және сымсыз
+      <p>4. Вирус жұмысының алгоритмі бойынша желі арқылы таралуы нешеге жіктеледі?</p>
+      <input type="radio" name="q4" value="5"> 5<br>
+      <input type="radio" name="q4" value="4"> 4<br>
+      <input type="radio" name="q4" value="3"> 3<br>
+      <input type="radio" name="q4" value="6"> 6
     </div>
 
     <div class="question">
-      <p>4. Қай интерфейс пайдаланушыға жеңіл әрі ыңғайлы болып есептеледі?</p>
-      <input type="radio" name="q4" value="A"> A. Мәтіндік интерфейс<br>
-      <input type="radio" name="q4" value="B"> B. Командалық жол интерфейсі<br>
-      <input type="radio" name="q4" value="C"> C. Графикалық интерфейс<br>
-      <input type="radio" name="q4" value="D"> D. Желілік интерфейс
+      <p>5. Резиденттік вирустардың негізгі ерекшелігі қандай?</p>
+      <input type="radio" name="q5" value="Желі арқылы таралуы"> Желі арқылы таралуы<br>
+      <input type="radio" name="q5" value="Компьютерді қайта қосқанда ғана іске қосылады"> Компьютерді қайта қосқанда ғана іске қосылады<br>
+      <input type="radio" name="q5" value="Жедел жадқа еніп, қолданушы әрекетін бақылайды"> Жедел жадқа еніп, қолданушы әрекетін бақылайды<br>
+      <input type="radio" name="q5" value="Вирустар тек құжаттарда болады"> Вирустар тек құжаттарда болады
     </div>
 
     <div class="question">
-      <p>5. Интерфейс арқылы не істеуге болады?</p>
-      <input type="radio" name="q5" value="A"> A. Компьютерді жинау<br>
-      <input type="radio" name="q5" value="B"> B. Ақпаратты өңдеу<br>
-      <input type="radio" name="q5" value="C"> C. Компьютермен байланыс орнату және басқару<br>
-      <input type="radio" name="q5" value="D"> D. Желіні қосу
+      <p>6. Макровирустар қай ортада таралады?</p>
+      <input type="radio" name="q6" value="Операциялық жүйе файлдарында"> Операциялық жүйе файлдарында<br>
+      <input type="radio" name="q6" value="Жүктелетін секторларда"> Жүктелетін секторларда<br>
+      <input type="radio" name="q6" value="Microsoft Office сияқты бағдарламаларда"> Microsoft Office сияқты бағдарламаларда<br>
+      <input type="radio" name="q6" value="Желілік протоколдарда"> Желілік протоколдарда
     </div>
 
     <div class="question">
-      <p>6. Қай интерфейс түрі командалар жазу арқылы жұмыс істейді?</p>
-      <input type="radio" name="q6" value="A"> A. Графикалық интерфейс<br>
-      <input type="radio" name="q6" value="B"> B. Сезімтал интерфейс<br>
-      <input type="radio" name="q6" value="C"> C. Командалық жол интерфейсі (CLI)<br>
-      <input type="radio" name="q6" value="D"> D. Сенсорлық интерфейс
+      <p>7. "Трояндық" вирус қай категорияға жатады?</p>
+      <input type="radio" name="q7" value="Файлдық вирус"> Файлдық вирус<br>
+      <input type="radio" name="q7" value="Жүктелетін вирус"> Жүктелетін вирус<br>
+      <input type="radio" name="q7" value="Желі вирусы"> Желі вирусы<br>
+      <input type="radio" name="q7" value="Макровирус"> Макровирус
     </div>
 
     <div class="question">
-      <p>7. Пайдаланушы интерфейсінің негізгі мақсаты қандай?</p>
-      <input type="radio" name="q7" value="A"> A. Компьютердің қуатын арттыру<br>
-      <input type="radio" name="q7" value="B"> B. Компьютерді бұзу<br>
-      <input type="radio" name="q7" value="C"> C. Адам мен компьютер арасындағы байланысты жеңілдету<br>
-      <input type="radio" name="q7" value="D"> D. Интернет жылдамдығын арттыру
+      <p>8. Бұл антивирустық бағдарлама интернетке қосылған кезде қауіпсіздік орнатуға көмектеседі. Бұл қай бағдарлама?</p>
+      <input type="radio" name="q8" value="Norton Antivirus"> Norton Antivirus<br>
+      <input type="radio" name="q8" value="Kaspersky Antivirus"> Kaspersky Antivirus<br>
+      <input type="radio" name="q8" value="Google Drive"> Google Drive<br>
+      <input type="radio" name="q8" value="Opera Browser"> Opera Browser
     </div>
 
     <div class="question">
-      <p>8. Сенсорлық экран интерфейсіне мысал бола алады:</p>
-      <input type="radio" name="q8" value="A"> A. Компьютердің пернетақтасы<br>
-      <input type="radio" name="q8" value="B"> B. Планшет немесе смартфон<br>
-      <input type="radio" name="q8" value="C"> C. Принтер<br>
-      <input type="radio" name="q8" value="D"> D. Сканер
+      <p>9. Сүзгі бағдарламалар (күзетші бағдарламалар) қай бағдарламаға жатады?</p>
+      <input type="radio" name="q9" value="Norton Antivirus"> Norton Antivirus<br>
+      <input type="radio" name="q9" value="Qustodio"> Qustodio<br>
+      <input type="radio" name="q9" value="Google Chrome"> Google Chrome<br>
+      <input type="radio" name="q9" value="WinRAR"> WinRAR
     </div>
 
-    <div class="question">
-      <p>9. Мәтіндік интерфейсте қолданушы не арқылы компьютермен байланысады?</p>
-      <input type="radio" name="q9" value="A"> A. Тінтуір<br>
-      <input type="radio" name="q9" value="B"> B. Пернетақта арқылы команда енгізу<br>
-      <input type="radio" name="q9" value="C"> C. Сенсорлы экран<br>
-      <input type="radio" name="q9" value="D"> D. Жарық диодтар
-    </div>
+    
 
     <div class="question">
-      <p>10. Интерфейс қолданушыға не береді?</p>
-      <input type="radio" name="q10" value="A"> A. Бағдарламаларды автоматты түрде жою<br>
-      <input type="radio" name="q10" value="B"> B. Компьютердің ішін көру мүмкіндігі<br>
-      <input type="radio" name="q10" value="C"> C. Жүйемен әрекеттесу тәсілдерін (батырмалар, мәзір, терезе)<br>
-      <input type="radio" name="q10" value="D"> D. Жаңа вирус орнату
+      <p>10. Вирус компьютерге қалай енуі мүмкін?</p>
+      <input type="radio" name="q10" value="Антивирусты орнатқанда"> Антивирусты орнатқанда<br>
+      <input type="radio" name="q10" value="Құжат басқанда"> Құжат басқанда<br>
+      <input type="radio" name="q10" value="Бөгде флешканы қосқанда"> Бөгде флешканы қосқанда<br>
+      <input type="radio" name="q10" value="Компьютерді өшіргенде"> Компьютерді өшіргенде
     </div>
 
     <button type="button" onclick="checkAnswers()">Жауап беру</button>
@@ -128,30 +127,30 @@
 
   <script>
     function checkAnswers() {
-      const correctAnswers = {
-        q1: "B",
-        q2: "B",
-        q3: "C",
-        q4: "C",
-        q5: "C",
-        q6: "C",
-        q7: "C",
-        q8: "B",
-        q9: "B",
-        q10: "C"
-      };
-
       let score = 0;
 
-      for (let q in correctAnswers) {
+      const answers = {
+        q1: "Жүйеге зиян келтіріп, таралу",
+        q2: "Жүйенің жиі істен шығуы және баяулауы",
+        q3: "Құрылу уақыты өзгереді немесе мүлдем жоғалып кетеді",
+        q4: "4",
+        q5: "Жедел жадқа еніп, қолданушы әрекетін бақылайды",
+        q6: "Microsoft Office сияқты бағдарламаларда",
+        q7: "Макровирус",
+        q8: "Kaspersky Antivirus",
+        q9: "Qustodio",
+        q10: "Бөгде флешканы қосқанда"
+      };
+
+      for (let q in answers) {
         const selected = document.querySelector(`input[name="${q}"]:checked`);
-        if (selected && selected.value === correctAnswers[q]) {
+        if (selected && selected.value === answers[q]) {
           score++;
         }
       }
 
-      const total = Object.keys(correctAnswers).length;
-      document.getElementById("result").textContent = `Сіз ${total} сұрақтың ${score}-іне дұрыс жауап бердіңіз.`;
+      document.getElementById("result").textContent = 
+        `Сіз ${Object.keys(answers).length} сұрақтың ${score}-іне дұрыс жауап бердіңіз.`;
     }
   </script>
 
