@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8">
+  <title>Интерфейс бойынша тест</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      max-width: 800px;
+      margin: 50px auto;
+      background: #f0f2f5;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h2 { color: #333; text-align: center; }
+    .question { margin-bottom: 20px; }
+    button {
+      background: #007bff;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+      display: block;
+      margin: 20px auto;
+    }
+    .result {
+      font-size: 18px;
+      font-weight: bold;
+      color: green;
+      text-align: center;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Пайдаланушы интерфейсі бойынша тест</h2>
+
+  <form id="quizForm">
+
+    <div class="question">
+      <p>1. Пайдаланушы интерфейсі дегеніміз не?</p>
+      <input type="radio" name="q1" value="A"> A. Компьютердің ішкі құрылғысы<br>
+      <input type="radio" name="q1" value="B"> B. Адам мен компьютер арасындағы байланыс түрі<br>
+      <input type="radio" name="q1" value="C"> C. Принтердің жұмыс істеу әдісі<br>
+      <input type="radio" name="q1" value="D"> D. Компьютерлік вирус
+    </div>
+
+    <div class="question">
+      <p>2. Графикалық интерфейс дегеніміз не?</p>
+      <input type="radio" name="q2" value="A"> A. Тек мәтін арқылы жұмыс істейтін интерфейс<br>
+      <input type="radio" name="q2" value="B"> B. Суреттер, батырмалар, мәзірлер арқылы басқарылатын интерфейс<br>
+      <input type="radio" name="q2" value="C"> C. Бағдарлама кодының интерфейсі<br>
+      <input type="radio" name="q2" value="D"> D. Компьютердің ішкі жады
+    </div>
+
+    <div class="question">
+      <p>3. Пайдаланушы интерфейсінің түрлерін атаңыз.</p>
+      <input type="radio" name="q3" value="A"> A. Ақпараттық және логикалық<br>
+      <input type="radio" name="q3" value="B"> B. Техникалық және механикалық<br>
+      <input type="radio" name="q3" value="C"> C. Графикалық және мәтіндік<br>
+      <input type="radio" name="q3" value="D"> D. Желілік және сымсыз
+    </div>
+
+    <div class="question">
+      <p>4. Қай интерфейс пайдаланушыға жеңіл әрі ыңғайлы болып есептеледі?</p>
+      <input type="radio" name="q4" value="A"> A. Мәтіндік интерфейс<br>
+      <input type="radio" name="q4" value="B"> B. Командалық жол интерфейсі<br>
+      <input type="radio" name="q4" value="C"> C. Графикалық интерфейс<br>
+      <input type="radio" name="q4" value="D"> D. Желілік интерфейс
+    </div>
+
+    <div class="question">
+      <p>5. Интерфейс арқылы не істеуге болады?</p>
+      <input type="radio" name="q5" value="A"> A. Компьютерді жинау<br>
+      <input type="radio" name="q5" value="B"> B. Ақпаратты өңдеу<br>
+      <input type="radio" name="q5" value="C"> C. Компьютермен байланыс орнату және басқару<br>
+      <input type="radio" name="q5" value="D"> D. Желіні қосу
+    </div>
+
+    <div class="question">
+      <p>6. Қай интерфейс түрі командалар жазу арқылы жұмыс істейді?</p>
+      <input type="radio" name="q6" value="A"> A. Графикалық интерфейс<br>
+      <input type="radio" name="q6" value="B"> B. Сезімтал интерфейс<br>
+      <input type="radio" name="q6" value="C"> C. Командалық жол интерфейсі (CLI)<br>
+      <input type="radio" name="q6" value="D"> D. Сенсорлық интерфейс
+    </div>
+
+    <div class="question">
+      <p>7. Пайдаланушы интерфейсінің негізгі мақсаты қандай?</p>
+      <input type="radio" name="q7" value="A"> A. Компьютердің қуатын арттыру<br>
+      <input type="radio" name="q7" value="B"> B. Компьютерді бұзу<br>
+      <input type="radio" name="q7" value="C"> C. Адам мен компьютер арасындағы байланысты жеңілдету<br>
+      <input type="radio" name="q7" value="D"> D. Интернет жылдамдығын арттыру
+    </div>
+
+    <div class="question">
+      <p>8. Сенсорлық экран интерфейсіне мысал бола алады:</p>
+      <input type="radio" name="q8" value="A"> A. Компьютердің пернетақтасы<br>
+      <input type="radio" name="q8" value="B"> B. Планшет немесе смартфон<br>
+      <input type="radio" name="q8" value="C"> C. Принтер<br>
+      <input type="radio" name="q8" value="D"> D. Сканер
+    </div>
+
+    <div class="question">
+      <p>9. Мәтіндік интерфейсте қолданушы не арқылы компьютермен байланысады?</p>
+      <input type="radio" name="q9" value="A"> A. Тінтуір<br>
+      <input type="radio" name="q9" value="B"> B. Пернетақта арқылы команда енгізу<br>
+      <input type="radio" name="q9" value="C"> C. Сенсорлы экран<br>
+      <input type="radio" name="q9" value="D"> D. Жарық диодтар
+    </div>
+
+    <div class="question">
+      <p>10. Интерфейс қолданушыға не береді?</p>
+      <input type="radio" name="q10" value="A"> A. Бағдарламаларды автоматты түрде жою<br>
+      <input type="radio" name="q10" value="B"> B. Компьютердің ішін көру мүмкіндігі<br>
+      <input type="radio" name="q10" value="C"> C. Жүйемен әрекеттесу тәсілдерін (батырмалар, мәзір, терезе)<br>
+      <input type="radio" name="q10" value="D"> D. Жаңа вирус орнату
+    </div>
+
+    <button type="button" onclick="checkAnswers()">Жауап беру</button>
+  </form>
+
+  <div class="result" id="result"></div>
+
+  <script>
+    function checkAnswers() {
+      const correctAnswers = {
+        q1: "B",
+        q2: "B",
+        q3: "C",
+        q4: "C",
+        q5: "C",
+        q6: "C",
+        q7: "C",
+        q8: "B",
+        q9: "B",
+        q10: "C"
+      };
+
+      let score = 0;
+
+      for (let q in correctAnswers) {
+        const selected = document.querySelector(`input[name="${q}"]:checked`);
+        if (selected && selected.value === correctAnswers[q]) {
+          score++;
+        }
+      }
+
+      const total = Object.keys(correctAnswers).length;
+      document.getElementById("result").textContent = `Сіз ${total} сұрақтың ${score}-іне дұрыс жауап бердіңіз.`;
+    }
+  </script>
+
+</body>
+</html>
